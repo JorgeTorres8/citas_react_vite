@@ -12,7 +12,7 @@ function App() {
   useEffect(() => { //Video 90
     const obtenerLS = () => {
     
-      const pacienteLS = JSON.parse(localStorage.getItem('pacientes')) ?? []; //JSON parse convierte un string en un array
+      const pacienteLS = JSON.parse(localStorage.getItem('pacientes')) ?? []; //JSON.parse() parse convierte un string en un array
       setPacientes(pacienteLS);
     }
 
